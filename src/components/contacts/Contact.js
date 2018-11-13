@@ -3,7 +3,7 @@ import { Consumer } from '../../context';
 
 class Contact extends Component {
     state = {
-        showContactInfo: true
+        showContactInfo: false
     };
     onDeleteClick = (id, dispatch) => {
         dispatch({type: 'DELETE_CONTACT', payload: id})
@@ -16,7 +16,7 @@ class Contact extends Component {
                 {value => {
                     const {dispatch} = value;
                     return(
-                        <div className="card card-nav mb-3">
+                        <div className="card card-nav mb-3" style={{padding: 12}}>
                             <h4>{name}{' '} 
                                 <i style={{cursor: 'pointer'}} className="fa fa-sort-down" aria-hidden="true" 
                                 onClick={() => this.setState({showContactInfo: !this.state.showContactInfo})}></i>

@@ -10,11 +10,8 @@ const Header = (props) => {
                     </a>
                     <div>
                         <ul className="navbar-nav mr-auto">
-                            <li className="nav-item">
+                            <li className="nav-item active">
                                 <a href="/" className="nav-link">Home</a>
-                            </li>
-                            <li className="nav-item">
-                                <a href="/" className="nav-link">Account</a>
                             </li>
                         </ul>
                     </div>
